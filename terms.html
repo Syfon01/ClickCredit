@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Click Credit Platform</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+  </head>
+  <body class="">
+      <header class="shadow-sm">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg bg-transparent">
+            <a class="navbar-brand tx-bold tx-spacing--2 order-1 tx-32" href="#"><span class="tx-black">Click</span><span class="tx-normal">Click </span></a>
+            <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i data-feather="menu" class="wd-20 ht-20"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto align-items-end">
+                <div class="mg-r-20 ">
+                  <a href="http://" class="btn btn-sm btn-outline pd-y-2"><i data-feather="power" class="mr-2"></i>Sign out</a>
+                </div>
+                <img src="./assets/img/UBA-Logo.png" class="img-fluid" alt="" srcset="">
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <section class="main-bg">
+      <div class="container pd-md-y-50 pd-y-20">
+        <button class="btn tx-primary tx-semibold mg-b-15" onclick="goBack()"><i class="fa fa-arrow-left mg-r-5"></i> Go back</button>
+        <div class="card card-body pd-lg-30">
+          <p class="tx-28 tx-bold tx-blackk mg-b-40">Terms & Conditions</p>
+          <div class="mg-b-25">
+            <p class="tx-16 tx-uppercase tx-semibold tx-red mg-b-10">NO WARRANTY</p>
+            <p class="tx-14 tx-medium">You don not have any active loansWe created this Website for the convenience of our Internet visitors. The information (including text, graphics and functionality) is presented “as is” and “as available” without express or implied warranties including, but not limited to, implied warranties of non-infringement, merchantability and fitness for a particular purpose. We expressly disclaim any liability for errors and omissions regarding the information and materials contained in the Website. Due to the nature of the Internet, 
+              we cannot guarantee the accuracy or completeness of the information contained in this Website or its suitability for any purpose.</p>
+          </div>
+          <div class="mg-b-25">
+            <p class="tx-16 tx-uppercase tx-semibold tx-red mg-b-10">VIRUSES</p>
+            <p class="tx-14 tx-medium">The information provided on this Website is solely for the personal use of Website users. You are authorised to view and copy the information available on this Website for personal purposes only, provided that any copies include any trade mark notices as they may appear on those pages copied. Except for the personal use of Website users, you may not copy, reproduce, modify, display, distribute, perform, disseminate, transmit, transfer, sell, license, publish, use to create a derivative work, or use for any public or commercial purposes any of the contents of 
+              this Website without the express prior written consent of Renmoney. You agree to access and use the Website only for lawful purposes.</p>
+          </div>
+          <div class="mg-b-25">
+            <p class="tx-16 tx-uppercase tx-semibold tx-red mg-b-10">LINKS TO THIS WEBSITE</p>
+            <p class="tx-14 tx-medium">Click Credit has not reviewed all of the sites which are linked to the Website, and the fact of such links does not indicate any endorsement, authorisation, sponsorship or affiliation with respect to the material contained on any linked site. Renmoney is not responsible for the contents of any site linked to the Website. 
+              Your connection to and use of any such linked site is at your own risk</p>
+          </div>
+          <div class="mg-b-5">
+            <p class="tx-16 tx-uppercase tx-semibold tx-red mg-b-10">SECURITY</p>
+            <p class="tx-14 tx-medium">We welcome your email correspondence. But Internet and email communications are not confidential. It is possible that information transmitted to us may be read or obtained by other parties. In an attempt to protect your privacy, our email responses do not include personal account information such as your BVN or bank account numbers. Email is an important communication channel for our Website’s visitors. We will use your email address and the content of any email for correspondence purposes and to meet our legal and regulatory requirements regarding customer communications. On occasion, we may use your email address to send you communications with information about service and product information that we believe 
+              may be of interest to you. If you do not want to receive such unsolicited communications from us, please send us a message to this effect.</p>
+          </div>
+        </div>
+
+      </div>
+
+        <!--success  Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header pd-y-15 bd-b-0 pd-md-x-30">
+                <h5 class="modal-title"></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body pd-md-x-35">
+                <div class="d-flex">
+                  <div>
+                    <img src="./assets/img/Check.svg" alt="" srcset="" class="img-fluid wd-75 ht-75">
+                  </div>
+                  <div class="mg-l-10">
+                    <p class="tx-22 tx-bold mb-0 pd-t-5">Loan Request Sent Successfully</p>
+                  </div>
+                </div>
+                <hr class="mg-t-10"/>
+                <p class="tx-14 col-md-11">Your request is being processed and your loan will be disbursed soon</p>
+
+              </div>
+              <div class="modal-footer bg-modal-footer pd-md-x-30">
+                <button type="button" class="btn btn-outlined-primary btn-sm pd-x-40 tx-semibold" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+      
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/assets/js/dashforge.js"></script>
+    <script src="assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/assets/js/dashforge.settings.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+        };
+    </script>
+
+  </body>
+</html>
