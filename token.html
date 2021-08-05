@@ -43,42 +43,69 @@
     <section class="main-bg">
       <div class="container pd-md-y-50 pd-y-20">
         <button class="btn tx-primary tx-semibold mg-b-15 d-block d-md-none d-lg-none" onclick="goBack()"><i class="fa fa-arrow-left mg-r-5"></i> Go back</button>
+
         <div class="row row-sm">
           <div class="col-md-8 order-2 order-md-1 mg-t-30 mg-md-t-0">
             <button class="btn tx-primary tx-semibold mg-b-15 d-none d-md-block d-lg-block" onclick="goBack()"><i class="fa fa-arrow-left mg-r-5"></i> Go back</button>
             <div class="card card-body pd-t-20 pd-b-30 pd-md-x-30 shadow-sm round-8">
-              <p class="tx-28 tx-bold mg-b-20 tx-blackk">Request New Loan</p>
-              <div class="card card-body bg-blue-50 pd-10">
-                <div class="d-flex">
-                  <div class="">
-                    <img src="./assets/img/info-icon.svg" alt="" srcset="" class="wd-15 ht-15">
+              <p class="tx-28 tx-bold mg-b-20 tx-blackk">Enter Token</p>
+              <div class="card card-body bg-light-blue pd-15 pd-md-20">
+                <p class="tx-14 tx-uppercase tx-semibold tx-blacck-light">LOAN REQUEST CONFIRMATION</p>
+                <div class="row">
+                  <div class="col-xl-6 bd-xl-r div-large">
+                    <div class="row mg-b-10 row-sm">
+                      <div class="col-5 col-md-5 col-lg-5 col-xl-7">
+                        <p class="tx-14 mb-0 tx-blacck-light">Requested Amount</p>
+                      </div>
+                      <div class="col-7 col-md-6 col-xl-5 col-lg-6">
+                        <p class="tx-16 mb-0 tx-semibold tx-heading">N800,000</p>
+                      </div>
+                    </div>
+                    <div class="row mg-b-10 row-sm">
+                      <div class="col-5 col-md-5 col-lg-5 col-xl-7">
+                        <p class="tx-14 mb-0 tx-blacck-light">Interest</p>
+                      </div>
+                      <div class="col-7 col-md-6 col-xl-5">
+                        <p class="tx-16 mb-0 tx-semibold tx-heading">2%</p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="mg-l-8">
-                    <p class="tx-16 tx-semibold tx-netrual mg-b-5">Loan Eligibility</p>
-                    <p class="tx-12 mb-0 tx-netrual">You are eligible to borrow <b>NGN 500,000.</b>  You will repay this loan over <b>12 months</b>, at <b>1.60%</b> monthly interest.  </p>
+                  <div class="col-xl-6 pd-xl-l-40">
+                    <div class="row mg-b-10 row-sm">
+                      <div class="col-5 col-md-5 col-lg-5 col-xl-6">
+                        <p class="tx-14 mb-0 tx-blacck-light">Duration</p>
+                      </div>
+                      <div class="col-7 col-md-6">
+                        <p class="tx-16 mb-0 tx-semibold tx-heading">12 Months</p>
+                      </div>
+                    </div>
+                    <div class="row mg-b-10 row-sm">
+                      <div class="col-5 col-md-5 col-lg-5 col-xl-6">
+                        <p class="tx-14 mb-0 tx-blacck-light">Account to Fund</p>
+                      </div>
+                      <div class="col-7 col-md-6">
+                        <p class="tx-16 mb-0 tx-semibold tx-heading">10234678353</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
+
               </div>
               <form class="mg-t-20">
                 <div class="form-group">
-                  <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">How much loan do you need?</label>
-                  <input type="text" class="form-control bg-gray-10" placeholder="-Enter amount-">
+                  <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">Enter the token that we sent to 0813*****67 below</label>
+                  <input type="text" class="form-control bg-gray-10" placeholder="-Enter Token-">
                 </div>
-                <div class="form-group">
-                  <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">Reason for loan</label>
-                  <select class="custom-select bg-gray-10">
-                    <option selected>-Select reason-</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">I agree to the <span class="tx-primary tx-semibold"><u>Terms and Conditions</u> </span></label>
                 </div>
                 
               </form>
             </div>
             <div class="modal-footer bd-t-0 mg-t-30">
               <button class="btn btn-outlined-primary pd-x-15" type="cancel">Clear Content</button>
-                <a href="./token.html" class="btn btn-primary pd-x-50" type="submit">Continue</a>
+                <button class="btn btn-primary pd-x-50" type="button" data-toggle="modal" data-target="#successModal">Continue</button>
               </div>
               <!-- mobile learn more  -->
             <div class="mg-md-t-30 mg-t-15 d-block d-md-none d-lg-none">
@@ -103,19 +130,47 @@
                   <label for="" class="mg-b-3 tx-14 tx-blackk-light">Employer</label>
                   <p class="tx-20 tx-semibold tx-heading mb-0">Zedcrest Ventures</p>
                   <p class="tx-14 tx-medium">32 Adetunde Street, Mercy Estate, Ikeja</p>
-
                 </div>
-               
               </div>
-             <!-- laptop learn more  -->
-             <div class="mg-md-t-30 mg-t-15 d-none d-md-block d-lg-block">
-              <a href="" class="tx-semibold"><u>Learn more about UBA ClickCredit</u></a>
-            </div>
+              <!-- laptop learn more  -->
+              <div class="mg-md-t-30 mg-t-15 d-none d-md-block d-lg-block">
+                <a href="" class="tx-semibold"><u>Learn more about UBA ClickCredit</u></a>
+              </div>
           </div>
 
           </div>
         </div>
       </div>
+
+        <!--success  Modal -->
+        <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header pd-y-15 bd-b-0 pd-md-x-30">
+                <h5 class="modal-title"></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body pd-md-x-35">
+                <div class="d-flex">
+                  <div>
+                    <img src="./assets/img/Check.svg" alt="" srcset="" class="img-fluid wd-75 ht-75">
+                  </div>
+                  <div class="mg-l-10">
+                    <p class="tx-22 tx-bold mb-0 pd-t-5">Loan Request Sent Successfully</p>
+                  </div>
+                </div>
+                <hr class="mg-t-10"/>
+                <p class="tx-14 col-md-11">Your request is being processed and your loan will be disbursed soon</p>
+
+              </div>
+              <div class="modal-footer bg-modal-footer pd-md-x-30">
+                <button type="button" class="btn btn-outlined-primary btn-sm pd-x-40 tx-semibold" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       
     </section>
       
