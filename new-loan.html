@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Click Credit Platform</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+  </head>
+  <body class="">
+      <header class="shadow-sm">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg bg-transparent">
+            <a class="navbar-brand tx-bold tx-spacing--2 order-1 tx-32" href="#"><span class="tx-black">Click</span><span class="tx-normal">Click </span></a>
+            <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i data-feather="menu" class="wd-20 ht-20"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto align-items-end">
+                <div class="mg-r-20 ">
+                  <a href="http://" class="btn btn-sm btn-outline pd-y-2"><i data-feather="power" class="mr-2"></i>Sign out</a>
+                </div>
+                <img src="./assets/img/UBA-Logo.png" class="img-fluid" alt="" srcset="">
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <section class="main-bg">
+      <div class="container pd-md-y-50 pd-y-20">
+        <div class="row row-sm">
+          <div class="col-md-8 order-2 order-md-1 mg-t-30 mg-md-t-0">
+            <button class="btn tx-primary tx-semibold mg-b-15" onclick="goBack()"><i class="fa fa-arrow-left mg-r-5"></i> Go back</button>
+            <div class="card card-body pd-t-20 pd-b-30 pd-md-x-30 shadow-sm round-8">
+              <p class="tx-28 tx-bold mg-b-20 tx-blackk">Request New Loan</p>
+              <div class="card card-body bg-blue-50 pd-10">
+                <div class="d-flex">
+                  <div class="">
+                    <img src="./assets/img/info-icon.svg" alt="" srcset="" class="wd-15 ht-15">
+                  </div>
+                  <div class="mg-l-8">
+                    <p class="tx-16 tx-semibold tx-netrual mg-b-5">Loan Eligibility</p>
+                    <p class="tx-12 mb-0 tx-netrual">You are eligible to borrow <b>NGN 500,000.</b>  You will repay this loan over <b>12 months</b>, at <b>1.60%</b> monthly interest.  </p>
+                  </div>
+                </div>
+              </div>
+              <form class="mg-t-20">
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">How much loan do you need?</label>
+                  <input type="text" class="form-control bg-gray-10" placeholder="-Enter amount-">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">Reason for loan</label>
+                  <select class="custom-select bg-gray-10">
+                    <option selected>-Select reason-</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                
+              </form>
+            </div>
+            <div class="modal-footer bd-t-0 mg-t-30">
+              <button class="btn btn-outlined-primary pd-x-15" type="cancel">Clear Content</button>
+                <a href="./token.html" class="btn btn-primary pd-x-50" type="submit">Continue</a>
+              </div>
+          </div>
+          <div class="col-md-4 order-1 order-md-2">
+            <div class="card card-body pd-t-20 pd-b-30 pd-x-30 shadow-sm round-8">
+              <p class="tx-28 tx-bold mg-b-5 tx-blackk">Profile</p>
+                <div class="d-flex justify-content-center pd-y-40">
+                  <div class="avatar avatar-xxl"><img src="./assets/img/Ellipse.png" class="rounded-circle" alt=""></div>
+                </div>
+                <div class="mg-b-20">
+                  <label for="" class="mg-b-3 tx-14 tx-blackk-light"> Full Name</label>
+                  <p class="tx-20 tx-semibold tx-heading mb-0">Somto Promise Adetunde</p>
+                </div>
+                <div class="mg-b-20">
+                  <label for="" class="mg-b-3 tx-14 tx-blackk-light">Account Number</label>
+                  <p class="tx-20 tx-semibold tx-heading mb-0">10243567143</p>
+                </div>
+                <div class="mg-b-10">
+                  <label for="" class="mg-b-3 tx-14 tx-blackk-light">Employer</label>
+                  <p class="tx-20 tx-semibold tx-heading mb-0">Zedcrest Ventures</p>
+                  <p class="tx-14 tx-medium">32 Adetunde Street, Mercy Estate, Ikeja</p>
+
+                </div>
+               
+              </div>
+              <div class="mg-md-t-30 mg-t-15">
+                <a href="" class="tx-semibold"><u>Learn more about UBA ClickCredit</u></a>
+              </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      
+    </section>
+      
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/assets/js/dashforge.js"></script>
+    <script src="assets/lib/js-cookie/js.cookie.js"></script>
+    <script src="assets/assets/js/dashforge.settings.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+        };
+    </script>
+
+  </body>
+</html>
