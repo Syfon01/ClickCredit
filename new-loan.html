@@ -63,7 +63,12 @@
               <form class="mg-t-20">
                 <div class="form-group">
                   <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">How much loan do you need?</label>
-                  <input type="text" class="form-control bg-gray-10" placeholder="-Enter amount-">
+                  <div class="input-group mg-b-10">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">&#x20a6;</span>
+                    </div>
+                    <input type="number" class="form-control bg-gray-10" placeholder="-Enter amount" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
                 </div>
                 <div class="form-group">
                   <label for="formGroupExampleInput" class="d-block tx-medium mg-b-5 tx-grey-900 tx-14">Reason for loan</label>
