@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Click Credit Platform</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+
+    <!-- Required External CSS -->
+    <link href="assets/lib/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/css/dashforge.css">
+    <link rel="stylesheet" href="assets/css/dashforge.auth.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+  </head>
+  <body class="auth-bg">
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+          <a class="navbar-brand tx-bold tx-spacing--2 order-1 tx-32 tx-white" href="#"><span class="">Click</span><span class="tx-normal">Click </span></a>
+          <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i data-feather="menu" class="wd-20 ht-20"></i>
+          </button>
+        
+          <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <img src="./assets/img/UBA-Logo.png" class="img-fluid" alt="" srcset="">
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <section class="col-lg-8 mx-auto ">
+      <div class="container mg-md-y-50 mg-y-20 bg-white rounded pd-md-t-30 pd-lg-40 pd-lg-b-120 pd-md-b-100">
+        <button class="btn tx-primary tx-semibold mg-b-15" onclick="goBack()"><i class="fa fa-arrow-left mg-r-5"></i> Go back</button>
+        <div class="tx-center col-md-9 mx-auto mg-t-30">
+        <p class="tx-30 tx-bold mg-b-10 tx-blackk mg-b-25">OTP Verification</p>
+          <div class="card card-body pd-t-30 pd-b-40">
+            <p class="tx-16">Enter the OTP that we sent to  0813*****67</p>
+            <form method="get" class="digit-group mg-t-20" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+              <input type="text" id="digit-1" name="digit-1" data-next="digit-2" placeholder="" />
+              <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" placeholder="" />
+              <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" placeholder="" />
+              <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" placeholder="" />
+              <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" placeholder="" />
+              <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" placeholder="" />
+            </form>
+          </div>
+          <a href="./mail.html" class="btn btn-primary mg-t-40 pd-x-80">Confirm</a>
+        </div>
+      </div>
+      
+    </section>
+      
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/feather-icons/feather.min.js"></script>
+    <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/dashforge.js"></script>
+    <script>
+      $('.digit-group').find('input').each(function() {
+        $(this).attr('maxlength', 1);
+        $(this).on('keyup', function(e) {
+          let parent = $($(this).parent());
+          
+          if(e.keyCode === 8 || e.keyCode === 37) {
+            let prev = parent.find('input#' + $(this).data('previous'));
+            
+            if(prev.length) {
+              $(prev).select();
+            }
+          } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+            let next = parent.find('input#' + $(this).data('next'));
+            
+            if(next.length) {
+              $(next).select();
+            } else {
+              if(parent.data('autosubmit')) {
+                parent.submit();
+              }
+            }
+          }
+        });
+      });
+    </script>
+    <script>
+      function goBack() {
+        window.history.back();
+        };
+    </script>
+
+  </body>
+</html>
