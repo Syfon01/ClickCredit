@@ -181,10 +181,10 @@ body{
  }
 @media (min-width: 1600px) { 
   .right-side{
-    padding-top: 15px;
+    /* padding-top: -10px; */
   }
   .right-side-log{
-    padding-top: 20px;
+    padding-top: 10px!important;
   }
  }
  @media (min-width: 1200px) { 
