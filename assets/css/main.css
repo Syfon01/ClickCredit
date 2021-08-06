@@ -186,6 +186,9 @@ body{
   .right-side-log{
     padding-top: 10px!important;
   }
+  .reg-top{
+    margin-top: 65px!important;
+  }
  }
  @media (min-width: 1200px) { 
   .row-sm.remove-pad > div{
