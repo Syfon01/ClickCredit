@@ -40,6 +40,9 @@ body{
 .tx-gray-400{
   color: #9CA3AF;
 }
+.tx-gray-700{
+  color: #374151;
+}
 .tx-gray{
   color:#6B5D5D;
 }
@@ -97,8 +100,17 @@ body{
 .bg-light-blue{
   background-color: #F9FAFB;
 }
+.bg-blue-100{
+  background-color: #DBEAFE;
+}
+.tx-blue-800{
+  color: #1E40AF;
+}
 .round-8{
   border-radius: 8px;
+}
+.round-10{
+  border-radius: 10px;
 }
 .round-12{
   border-radius: 12px;
@@ -201,4 +213,9 @@ body{
   }
  }
 
- 
+ .form-control-sm{
+   /* height: calc(1.2em + 0.682rem + 1px); */
+ }
+ .bg-red-50{
+  background-color: #FFEBE6;
+ }

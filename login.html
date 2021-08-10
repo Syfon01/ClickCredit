@@ -58,7 +58,7 @@
               </div>
              
               <div class="card card-body shadow-sm pd-20">
-                <div class="card card-body bg-blue-50 pd-10">
+                <div class="card card-body bg-blue-50 pd-10 border-0">
                   <div class="d-flex">
                     <div class="">
                       <img src="./assets/img/info-icon.svg" alt="" srcset="" class="wd-15 ht-15">
@@ -70,21 +70,34 @@
                   </div>
                  
                 <p class="tx-18 tx-semibold mg-b-2 mg-t-15">Login</p>
-                <p class="tx-11 tx-gray mg-b-15">Enter your UBA Account Number and Password.</p>
+                <p class="tx-11 tx-gray mg-b-8">Enter your UBA Account Number and Password.</p>
+                <!-- error state   -->
+                <div class="d-none">
+                  <div class="card card-body bg-red-50 pd-10 border-0 mg-b-8">
+                    <div class="d-flex">
+                      <div class="">
+                        <img src="./assets/img/warn-icon.svg" alt="" srcset="" class="wd-15 ht-15">
+                      </div>
+                      <div class="mg-l-8">
+                        <p class="tx-12 mb-0 tx-danger">Please ensure that your UBA salary account number or your password is correct</p>
+                      </div>
+                    </div>
+                    </div>
+                </div>
 
                 <form action="">
                   <div class="form-group required mg-b-10">
-                    <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-5">Account Number </label>
-                    <input type="text" class="form-control" placeholder="">
+                    <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Account Number </label>
+                    <input type="text" class="form-control form-control-sm" placeholder="">
                   </div>
                   <div class="form-group required mg-b-10">
                     <div class="d-flex justify-content-between">
-                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-5">Password </label>
+                      <label for="formGroupExampleInput" class="d-block control-label tx-medium mg-b-3">Password </label>
                       <div>
-                        <a href="./forgot-password.html" class="tx-10 tx-center mg-b-0 tx-medium">Forgot Password</a>
+                        <a href="./forgot-password.html" class="tx-10 tx-right mg-b-0 tx-uppercase">Forgot Password</a>
                       </div>
                     </div>
-                    <input type="text" class="form-control" placeholder="">
+                    <input type="text" class="form-control form-control-sm" placeholder="">
                   </div>
                   <div class="float-md-right">
                   <a href="./dashboard.html" class="btn btn-primary  float-right pd-y-7 pd-x-40">Login</a>
@@ -96,17 +109,17 @@
               <div class="mg-t-15">
                 <a href="./register.html" class="tx-primary tx-12 mb-0 tx-semibold">REGISTER <span class="tx-gray tx-normal">and create a profile.  </span></a>
               </div>
-              <div class="mg-t-25">
+              <div class="mg-t-40">
               <hr class="mg-y-5">
                 <div class="d-flex justify-content-between">
                   <p class="tx-gray mg-b-0 tx-12">&copy;2021 UBA Group</p>
-                  <a href="./terms.html" class="tx-semibold mg-b-0 tx-12">Terms and Conditions</a>
+                  <a href="./terms.html" class="mg-b-0 tx-12" style="text-decoration: underline;">Terms and Conditions</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-7 col-xl-8 pd-md-l-0 neg-left d-md-none d-lg-block d-xl-block d-none">
-            <div class="pd-xl-t-40 pd-lg-t-120 right-side-log">
+            <div class="pd-xl-t-50 pd-lg-t-120 right-side-log">
               <img src="./assets/img/Right - ClickClick-Image.png" alt="" srcset="" class="img-fluid">
             </div>
           </div>

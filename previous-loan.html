@@ -47,8 +47,8 @@
           <div class="col-md-8 order-2 order-md-1 mg-t-30 mg-md-t-0">
             <div class="card card-body pd-t-20 pd-b-30 pd-md-x-30 shadow-sm round-8">
               <p class="tx-28 tx-bold mg-b-5 tx-blackk">Your Current Loan</p>
-              <p class="tx-16 mg-b-5">You can only access only one loan at a time</p>
-              <div class="card card-body bg-blue-50 pd-10">
+              <p class="tx-16 mg-b-5">You can only access only one loan at a time.</p>
+              <div class="card card-body bg-blue-50 pd-10 border-0 mg-t-15">
                 <div class="d-flex">
                   <div class="">
                     <img src="./assets/img/info-icon.svg" alt="" srcset="" class="wd-15 ht-15">
@@ -63,72 +63,172 @@
                 <div class="col-md-9 col-lg-6 col-xl-5 mx-auto tx-center">
                   <img src="./assets/img/cash.svg"  alt="" class="img-fluid wd-40 ht-30" srcset="">
                   <p class="tx-medium tx-14 mg-b-4 mg-t-10 tx-blackk">No Loan</p>
-                  <p class="tx-14 mg-b-20 tx-blacck-light">You are yet to request any loan.</p>
+                  <p class="tx-14 mg-b-20 tx-blacck-light">You are yet to request any loans.</p>
                   <a href="./new-loan.html" class="btn btn-primary">Request New Loan</a>
                 </div>
               </div>
             </div>
 
             <div class="card card-body pd-t-20 pd-b-30 pd-md-x-30 shadow-sm mg-t-25 round-8">
-              <p class="tx-28 tx-bold mg-b-3 tx-blackk">Your Previous Loans</p>
-              <div class="card card-body mg-t-15 bg-light-blue pd-15 pd-md-20">
-                <p class="tx-14 tx-uppercase tx-semibold">Loan  for {Reason for loan}</p>
-                <div class="row justify-content-between">
-                  <div class="col-lg-8 col-xl-6">
-                    <div class="row mg-b-10 row-sm">
-                      <div class="col-5 col-md-5 col-lg-6 col-xl-6">
-                        <p class="tx-14 mb-0 tx-blacck-light">Loan Amount</p>
+              <p class="tx-28 tx-bold mg-b-3 tx-blackk">Your Loan History</p>
+              <div id="accordion">
+                <div class="card bg-light-blue">
+                  <div class="card-header pd-15 pd-md-20" id="headingOne">
+                    <div class="row justify-content-md-between">
+                      <div class="col-md-5">
+                      <p class="tx-14 tx-uppercase tx-semibold mb-0 mg-t-5">Loan  for {Reason for loan}</p>
                       </div>
-                      <div class="col-7 col-md-6">
-                        <p class="tx-16 mb-0 tx-semibold tx-heading">N800,000</p>
+                      <div class="col-md-4 col-6 mg-t-10 mg-md-t-0">
+                        <span class="badge bg-blue-100  tx-blue-800 tx-12 mg-t-3 tx-uppercase round-10 pd-x-10">ongoing</span>
                       </div>
-                    </div>
-                    <div class="row mg-b-10 row-sm">
-                      <div class="col-5 col-md-5 col-lg-6 col-xl-6">
-                        <p class="tx-14 mb-0 tx-blacck-light">Interest</p>
-                      </div>
-                      <div class="col-7 col-md-6">
-                        <p class="tx-16 mb-0 tx-semibold tx-heading">2%</p>
+                      <div class="col-md-3 col-6 mg-t-10 mg-md-t-0">
+                        <button class="btn btn-outline-secondary btn-sm viewMore2 tx-gray-700 tx-medium pd-y-5 tx-12 float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          View more
+                        </button>
                       </div>
                     </div>
-                    <div class="row mg-b-10 row-sm">
-                      <div class="col-5 col-md-5 col-lg-6 col-xl-6">
-                        <p class="tx-14 mb-0 tx-blacck-light">Duration</p>
-                      </div>
-                      <div class="col-7 col-md-6">
-                        <p class="tx-16 mb-0 tx-semibold tx-heading">12 Months</p>
-                      </div>
-                    </div>
-                    <div class="row mg-b-5 row-sm">
-                      <div class="col-5 col-md-5 col-lg-6 col-xl-6">
-                        <p class="tx-14 mb-0 tx-blacck-light">Account to Fund</p>
-                      </div>
-                      <div class="col-7 col-md-6">
-                        <p class="tx-16 mb-0 tx-semibold tx-heading">10243567143</p>
-                      </div>
-                    </div>
-                   
                   </div>
-                  <div class="col-xl-5 col-lg-8">
-                    <div class="row mg-b-10 row-sm remove-pad">
-                      <div class="col-5 col-md-5 col-lg-6 col-xl-5 pd-xl-x-0">
-                        <p class="tx-14 mb-0 tx-blacck-light">Date Requested</p>
-                      </div>
-                      <div class="col-7 col-md-6 pad-left">
-                        <p class="tx-16 mb-0 tx-semibold tx-heading">Mon, 4 July, 2021</p>
+                  
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body pd-15 pd-md-20">
+                      <div class="row justify-content-between">
+                        <div class="col-lg-8 col-xl-6">
+                          <div class="row mg-b-10 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Loan Amount</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">N800,000</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-10 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Interest</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">2%</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-10 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Duration</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">12 Months</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-5 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Account to Fund</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">10243567143</p>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="col-xl-6 col-lg-8">
+                          <div class="row mg-b-10 row-sm remove-pad">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-5 pd-xl-x-0">
+                              <p class="tx-14 mb-0 tx-blacck-light">Date Requested</p>
+                            </div>
+                            <div class="col-7 col-md-6 pad-left">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">Mon, 4 July, 2021</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-10 row-sm remove-pad">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-5 pd-xl-x-0">
+                              <p class="tx-14 mb-0 tx-blacck-light">Loan Repaid</p>
+                            </div>
+                            <div class="col-7 col-md-6 pad-left">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">Mon, 4 July, 2021</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="row mg-b-10 row-sm remove-pad">
-                      <div class="col-5 col-md-5 col-lg-6 col-xl-5 pd-xl-x-0">
-                        <p class="tx-14 mb-0 tx-blacck-light">Loan Repaid</p>
+                  </div>
+                </div>
+                <div class="card mg-t-20 bg-light-blue">
+                  <div class="card-header pd-15 pd-md-20" id="headingTwo">
+                    <div class="row justify-content-md-between">
+                      <div class="col-md-5">
+                      <p class="tx-14 tx-uppercase tx-semibold mb-0 mg-t-5">Loan  for {Reason for loan}</p>
                       </div>
-                      <div class="col-7 col-md-6 pad-left">
-                        <p class="tx-16 mb-0 tx-semibold tx-heading">Mon, 4 July, 2021</p>
+                      <div class="col-md-4 col-6 mg-t-10 mg-md-t-0">
+                        <span class="badge bg-green-100  tx-green-800 tx-12 mg-t-3 tx-uppercase round-10 pd-x-10">REPAYMENT COMPLETE</span>
+                      </div>
+                      <div class="col-md-3 col-6 mg-t-10 mg-md-t-0">
+                        <button class="btn btn-outline-secondary btn-sm viewMore2 tx-gray-700 tx-medium pd-y-5 tx-12 float-right" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          View more
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body pd-15 pd-md-20">
+                      <div class="row justify-content-between">
+                        <div class="col-lg-8 col-xl-6">
+                          <div class="row mg-b-10 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Loan Amount</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">N800,000</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-10 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Interest</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">2%</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-10 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Duration</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">12 Months</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-5 row-sm">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-6">
+                              <p class="tx-14 mb-0 tx-blacck-light">Account to Fund</p>
+                            </div>
+                            <div class="col-7 col-md-6">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">10243567143</p>
+                            </div>
+                          </div>
+                         
+                        </div>
+                        <div class="col-xl-6 col-lg-8">
+                          <div class="row mg-b-10 row-sm remove-pad">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-5 pd-xl-x-0">
+                              <p class="tx-14 mb-0 tx-blacck-light">Date Requested</p>
+                            </div>
+                            <div class="col-7 col-md-6 pad-left">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">Mon, 4 July, 2021</p>
+                            </div>
+                          </div>
+                          <div class="row mg-b-10 row-sm remove-pad">
+                            <div class="col-5 col-md-5 col-lg-6 col-xl-5 pd-xl-x-0">
+                              <p class="tx-14 mb-0 tx-blacck-light">Loan Repaid</p>
+                            </div>
+                            <div class="col-7 col-md-6 pad-left">
+                              <p class="tx-16 mb-0 tx-semibold tx-heading">Mon, 4 July, 2021</p>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              
             </div>
             <!-- mobile learn more  -->
             <div class="mg-md-t-30 mg-t-15 d-block d-md-none d-lg-none">
@@ -171,5 +271,16 @@
     <script src="assets/lib/feather-icons/feather.min.js"></script>
     <script src="assets/lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/dashforge.js"></script>
+    <script>
+      $('.viewMore2').click(function(){
+		var $this = $(this);
+		$this.toggleClass('viewMore2');
+		if($this.hasClass('viewMore2')){
+			$this.text('View more');			
+		} else {
+			$this.text('View less');
+		}
+	});
+    </script>
   </body>
 </html>
